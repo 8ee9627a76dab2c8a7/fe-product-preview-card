@@ -138,3 +138,33 @@ body {
     transition: all ease-in-out 0.2s;
 
 }
+
+.btn:hover{
+    background: var(--deep-aquamarine-hover, #1A4032);
+}
+
+@media screen and (max-width: 650px) {
+
+    main {
+        padding: 28px 16px;;
+    }
+
+    .container {
+        grid-template-rows: 15rem 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .product-photo {
+        background-image: url("./images/image-product-mobile.jpg");
+        border-radius: 15px 15px 0 0;
+    }
+
+    .product-price {
+        gap: 1rem;
+    }
+
+    .product-info-wrapper {
+        padding: 1rem;
+        border-radius: 0rem 0rem 0.938rem 0.938rem;
+    }
+}
